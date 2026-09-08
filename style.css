@@ -71,6 +71,13 @@ hr {
     color: white;
 }
 
+section {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
 
 /* 
 ------------------------
@@ -121,7 +128,8 @@ ul li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  border: 2px solid transparent; /* FIX THIS */
+  border: 2px solid transparent;
+  font-size: 2.5vw;
 }
 
 ul li a:hover {
@@ -154,29 +162,24 @@ ul li a:hover {
 #home-container {
     justify-content: center;
     width: 100%;
+    flex-direction: row;
+    gap: 50px;
 }
 
 #home-text-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 600px;
 }
 
 #home-text-container > * {
     color: white;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 .parent {
     flex-wrap: wrap;
-}
-
-.children {
-    flex: 1 1 auto;
-}
-
-.children > * {
-    max-width: 400px;
 }
 
 
@@ -185,10 +188,6 @@ ul li a:hover {
          ABOUT
 ---------------------------- 
 */
-
-#about-container {
-    flex-direction: column;
-}
 
 #about-text {
     color: white;
@@ -205,10 +204,6 @@ ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-#projects-container {
-    flex-direction: column;
 }
 
 .project-example-container {
@@ -232,6 +227,72 @@ ul li a:hover {
 
 .project-image {
     width: 100%;
+}
+
+
+/* 
+-------------------------------
+         Practice
+------------------------------- 
+*/
+
+#github {
+    flex-direction: column;
+}
+
+#github:hover {
+    border-color: #3a3b3a
+}
+
+#github > * {
+    margin: 10px;
+    color: white
+}
+
+#commit-chart-container {
+    margin: 10px;
+    overflow: auto;
+    direction: rtl;
+    color: white;
+}
+
+#commit-chart {
+    width: 100%;
+    min-width: 1000px;
+}
+
+/* 
+-------------------------------
+         Skills
+------------------------------- 
+*/
+
+.skill-container {
+    flex-direction: column;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.skill-container > * {
+    margin: 10px;
+}
+
+.skills-icons-container {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.skill-icon-container {
+    margin: 5px;
+    flex-direction: column;
+}
+
+.skill-icon-container > * {
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
 }
 
 
