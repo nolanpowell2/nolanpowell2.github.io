@@ -21,14 +21,29 @@ VARIABLES AND GLOBAL STYLES
     font-family: Share Tech;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(pics/background.png);
+  background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 body {
     margin: 0px; /* get rid of space around edges*/
     background-image: url(pics/background.png);
-    background-color: black;
+    /* background-color: black;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
     min-width: none;
 }
