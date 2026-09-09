@@ -75,8 +75,20 @@ section {
     flex-direction: column;
 }
 
-a {
+a,
+a:link,
+a:visited {
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover h3 > .link-symbol {
+    color:#00FF00;
+    opacity: 1;
+}
+
+.link-symbol {
+    opacity: 0.5;
 }
 
 /* 
@@ -103,10 +115,11 @@ a {
 }
 
 #header {
+    margin: 10px 10px;
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color:#00FF000D;
     flex-wrap: wrap;
     border-radius: 1rem;
 }
@@ -124,7 +137,7 @@ ul {
 
 ul li a {
   display: block;
-  color: white;
+  color: white !important;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -289,10 +302,57 @@ ul li a:hover {
 
 .skill-icon-container > * {
     text-align: center;
+    padding: 10px;
 }
 
 .icon {
     width: 100px;
+}
+
+/* 
+-------------------------------
+         Skills
+------------------------------- 
+*/
+
+#contact-content-container {
+    flex-direction: column;
+    color: white;
+}
+
+#contact-content-container > * {
+    margin: 10px;
+}
+
+.contact-icon {
+    align-items: center;
+    gap: 1em;
+}
+
+.contact-icon > img {
+    width: 50px;
+}
+
+.link-symbol {
+    font-size: 25px;
+}
+
+.contact-icon:hover .link-symbol {
+    color:#00FF00;
+    opacity: 1;
+}
+
+/* 
+-------------------------------
+         Footer
+------------------------------- 
+*/
+
+footer > div {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-size: 1em;
 }
 
 
